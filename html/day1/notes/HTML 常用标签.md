@@ -26,3 +26,12 @@ span 小盒子，可以多个一行
 <img src="xxx.img" width="" height=""  //二者取其一，另外一个可以等比例缩放，同时设置容易失真
 ```
 
+
+
+## 超链接标签
+
+```
+<a href="http://www.qq.com" target="">tencent</a>
+target 是打开窗口的方式，默认是 _self， _blank 更友好一些
+```
+
