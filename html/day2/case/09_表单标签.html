@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form>
-         username:<input type="text" name="username" value="input your username"> <br>
-         password:<input type="password" name="password"> <br>
-         gender:
-                male<input type="radio" name="gender" value="male" >  
+    <form accept="xxx.php" method="get">
+        username:<input type="text" name="username" value="input your username"> <br>
+        password:<input type="password" name="password" maxlength="20"> <br>
+        gender:
+                male<input type="radio" name="gender" value="male" checked="checked">  
                 female<input type="radio" name="gender" value="female"> <br>
-         hobbies: reading<input type="checkbox" name="hobbies" value="reading">
-                  watching <input type="checkbox" name="hobbies" value="watching">
-                  running<input type="checkbox" name="hobbies" value="running">
-        
+        hobbies:
+                reading<input type="checkbox" name="hobbies" value="reading">
+                watching <input type="checkbox" name="hobbies" value="watching">
+                running<input type="checkbox" name="hobbies" value="running"> <br>
+        TOS:<input type="checkbox" name="TOS_checked" value="TOS_checked" checked="checked"><br>
+        <input type="submit" value="立即注册！">
+        <input type="reset" value="重新填写">
     </form>
-
-    
 </body>
 </html>
