@@ -11,3 +11,11 @@ h1 {
 img[src] {
     width: 200px;
 }
+
+.myclass{
+    color: pink;
+}
+
+a:hover{
+    color: violet;
+}
