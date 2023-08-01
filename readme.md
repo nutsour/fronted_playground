@@ -1,1 +1,1 @@
-The playground to the fronted page of wwwDOTabner-nanoDOTcom
+The playground for fronted_end learning
