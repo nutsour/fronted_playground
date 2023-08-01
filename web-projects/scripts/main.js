@@ -5,8 +5,12 @@ let myHeading = document.querySelector("h1");
 //setUserName(); 获取用户输入的名字，并且对 myHeading 进行文字上的操作
 function setUserName() {
   let UserName = prompt("input your username plz");
-  localStorage.setItem("name", UserName);
-  myHeading.textContent = "Mozilla is coolest " + UserName;
+  if (!UserName) {
+    setUserName();
+  } else {
+    localStorage.setItem("name", UserName);
+    myHeading.textContent = "Mozilla is coolest " + UserName;
+  }
 }
 
 //判断一下localStorage 中是否存在了 UserName，如果有就获取出来，然后对 myHeading 进行操作，如果没有就调用 setUserName 方法对 myHeading 进行操作
