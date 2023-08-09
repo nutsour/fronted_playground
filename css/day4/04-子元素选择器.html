@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .nav a {
+        color: red;
+      } 
+      这是后代选择器
+      */
+
+      .nav > a {
+        color: green;
+      }
+      /* 子选择器中，父子元素之间用 > 隔开 */
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">im the son</a>
+      <div>
+        <a href="#">im the grandson</a>
+      </div>
+    </div>
+  </body>
+</html>
