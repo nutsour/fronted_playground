@@ -1,0 +1,31 @@
+.center {
+  text-align: center;
+}
+.em {
+  text-indent: 2em;
+}
+
+.footer {
+  font-size: 12px;
+  color: #888888;
+  font-family: Microsoft YaHei;
+}
+
+p {
+  line-height: 28px;
+}
+
+button {
+  font-weight: 700;
+}
+
+.grey {
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+}
+
+.search {
+  color: #666;
+  width: 170px;
+}
