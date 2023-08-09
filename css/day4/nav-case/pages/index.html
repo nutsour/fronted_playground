@@ -5,25 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
+      .nav a {
         display: inline-block;
-        width: 150px;
-        height: 60px;
-        background: url(../images/bg4.png) no-repeat center center;
-        color: white;
-        line-height: 50px;
+        width: 120px;
+        height: 58px;
+        background-color: pink;
         text-align: center;
+        line-height: 48px;
+        color: white;
+        text-decoration: none;
       }
 
-      .one:hover {
-        background-image: url(../images/bg5.png);
+      .nav .bg1 {
+        background: url(../images/bg1.png) no-repeat;
+      }
+
+      .nav .bg1:hover {
+        background: url(../images/bg11.png) no-repeat;
+      }
+
+      .nav .bg2 {
+        background: url(../images/bg2.png) no-repeat;
+      }
+
+      .nav .bg2:hover {
+        background: url(../images/bg22.png) no-repeat;
+      }
+
+      .nav .bg3 {
+        background: url(../images/bg3.jpg) no-repeat;
+      }
+
+      .nav .bg3:hover {
+        background: url(../images/bg3.png) no-repeat;
+      }
+      .nav .bg4 {
+        background: url(../images/bg4.png) no-repeat;
+      }
+      .nav .bg4:hover {
+        background: url(../images/bg5.png) no-repeat;
       }
     </style>
   </head>
   <body>
-    <div class="one">五彩导航</div>
-    <div class="one">五彩导航</div>
-    <div class="one">五彩导航</div>
-    <div class="one">五彩导航</div>
+    <div class="nav">
+      <a href="#" class="bg1">五彩导航</a>
+      <a href="#" class="bg2">五彩导航</a>
+      <a href="#" class="bg3">五彩导航</a>
+      <a href="#" class="bg4">五彩导航</a>
+    </div>
   </body>
 </html>
