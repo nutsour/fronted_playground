@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 一个 li 元素选择器是1 */
+      li {
+        color: green;
+      }
+      /* 一个 ul 元素选择器是 1， 一个 li 元素选择器是 1，相加后为 2  */
+      ul li {
+        color: red;
+      }
+
+      /* 类选择器 + li 元素选择器 = 10 + 1 =11  */
+      .nav li {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+  </body>
+</html>
