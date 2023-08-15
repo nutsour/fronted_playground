@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* div 是块级盒子，水平居中要满足：1盒子必须指定了宽度2盒子左右外边距（margin）都是auto */
       .header {
         width: 900px;
         height: 200px;
         background-color: pink;
         margin: 0 auto;
+        /* 行内元素 or 行内块元素要水平居中，为其父标签设置 text-align 即可 */
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="header"></div>
+    <div class="header">
+      <span>我是里面的测试文字</span>
+    </div>
   </body>
 </html>
