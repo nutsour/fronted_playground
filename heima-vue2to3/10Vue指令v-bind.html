@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="app">
-      <img v-bind:src="imgUrl" alt="" />
+      <img :src="imgUrl" :title="name" alt="" />
     </div>
     <!-- 引入 vue2 的开发版本的包 -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -17,6 +17,7 @@
         el: "#app",
         data: {
           imgUrl: "./imgs/10-01.png",
+          name: "helloBOBO",
         },
       });
     </script>
