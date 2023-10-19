@@ -8,11 +8,13 @@
   <body>
     <div id="app">
       <!-- 需要是点击事件 -->
-      <button @click="index--">previous page</button>
+      <!-- 优化：当 index 达到第一个和最后一个的时候，将按钮设置隐藏，使用 v-show 指令
+       -->
+      <button v-show="index>0" @click="index--">previous page</button>
       <div>
         <img :src="list[index]" alt="" />
       </div>
-      <button @click="index++">next page</button>
+      <button v-show="index<list.length - 1" @click="index++">next page</button>
     </div>
 
     <!-- 引入 vue2 的开发版本的包 -->
