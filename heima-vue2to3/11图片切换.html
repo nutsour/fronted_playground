@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 需要是点击事件 -->
+      <button @click="index--">previous page</button>
+      <div>
+        <img :src="list[index]" alt="" />
+      </div>
+      <button @click="index++">next page</button>
+    </div>
+
+    <!-- 引入 vue2 的开发版本的包 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          index: 0,
+          list: [
+            "./imgs/11-00.gif",
+            "./imgs/11-01.gif",
+            "./imgs/11-02.gif",
+            "./imgs/11-03.gif",
+            "./imgs/11-04.png",
+            "./imgs/11-05.png",
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
