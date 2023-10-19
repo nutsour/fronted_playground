@@ -10,9 +10,9 @@
       <h3>小黑的书架</h3>
       <span>
         <ul>
-          <li v-for="(item,index) in bookshelf">
-            {{item}}
-            <button @click="">del</button>
+          <li v-for="(item,index) in booklist">
+            {{item.name}} {{item.author}}
+            <button @click="del(item.id)">del</button>
           </li>
         </ul>
       </span>
@@ -24,7 +24,18 @@
       const app = new Vue({
         el: "#app",
         data: {
-          bookshelf: ["红楼", "西游", "水浒", "三国"],
+          booklist: [
+            { id: 1, name: "红楼", author: "曹雪芹" },
+            { id: 2, name: "西游", author: "吴承恩" },
+            { id: 3, name: "水浒", author: "施耐庵" },
+            { id: 4, name: "三国", author: "罗贯中" },
+          ],
+        },
+        methods: {
+          del(id) {
+            // console.log(id);
+            this.booklist = this.booklist.filter((item) => item.id !== id);
+          },
         },
       });
     </script>
