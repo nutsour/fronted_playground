@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="box">
+        <h3>小黑自动售货机</h3>
+        <button @click="buy(5)">可乐{{cola}}元</button>
+        <button @click="buy(10)">咖啡{{coffee}}元</button>
+        <button @click="buy(8)">牛奶{{milk}}</button>
+      </div>
+      <p>银行卡余额：{{balance}}元</p>
+    </div>
+
+    <!-- 引入 vue2 的开发版本的包 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          cola: 5,
+          coffee: 10,
+          milk: 8,
+          balance: 999,
+        },
+        methods: {
+          buy(price) {
+            console.log(price);
+            this.balance -= price;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
