@@ -5,5 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <img v-bind:src="imgUrl" alt="" />
+    </div>
+    <!-- 引入 vue2 的开发版本的包 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          imgUrl: "./imgs/10-01.png",
+        },
+      });
+    </script>
+  </body>
 </html>
