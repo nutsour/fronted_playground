@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div,
-      p,
-      span {
+      * {
         color: red;
       }
+
+      div {
+        color: yellowgreen;
+      }
+      /* 选择范围越大，优先级越低 */
     </style>
   </head>
   <body>
-    <div>我是一个 div</div>
-    <p>我是一个 p</p>
-    <span>我是一个 span</span>
+    <div>
+      <div>div标签</div>
+    </div>
   </body>
 </html>
