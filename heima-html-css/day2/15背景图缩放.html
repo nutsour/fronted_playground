@@ -6,23 +6,22 @@
     <title>Document</title>
     <style>
       div {
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 300px;
+        background-color: pink;
 
-        /* 背景图默认平铺效果 */
         background-image: url(../day1/images/cat.jpg);
         background-repeat: no-repeat;
 
-        /* 水平:正数向右,负数向左 */
-        /* background-position: -100px 100px; */
+        /* 当图的宽高和盒子尺寸相等时,停止缩放, 可能会导致盒子有露白*/
+        /* background-size: contain; */
 
-        /* 垂直:正数向上,负数向下 */
-
+        /*cover 图片覆盖盒子全尺寸,可能导致部分图片不显示 */
         background-size: cover;
       }
     </style>
   </head>
   <body>
-    <div>我是一个 div 标签</div>
+    <div>我是一个div盒子</div>
   </body>
 </html>
